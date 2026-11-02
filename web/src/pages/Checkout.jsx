@@ -18,6 +18,7 @@ import {
 import confetti from 'canvas-confetti';
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
+import { assetUrl } from '../utils/assetUrl';
 
 export default function Checkout() {
   const navigate = useNavigate();
@@ -59,7 +60,7 @@ export default function Checkout() {
   const primaryRestaurant = {
     id: cartItems[0]?.restaurantId || 'rest-1',
     name: cartItems[0]?.restaurantName || 'Royal Biryani House',
-    image: cartItems[0]?.image || '/images/70127abf-d5b0-4856-a439-703e4ee48934_1209174.jpg'
+    image: cartItems[0]?.image || assetUrl('/images/70127abf-d5b0-4856-a439-703e4ee48934_1209174.jpg')
   };
 
   const handlePlaceOrder = async (e) => {
@@ -478,4 +479,3 @@ export default function Checkout() {
     </div>
   );
 }
-

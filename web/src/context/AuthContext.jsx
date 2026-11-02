@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { assetUrl } from '../utils/assetUrl';
 
 const AuthContext = createContext(null);
 
@@ -51,7 +52,7 @@ export const AuthProvider = ({ children }) => {
           restaurant: {
             id: "rest-1",
             name: "Royal Biryani House",
-            image: "/images/70127abf-d5b0-4856-a439-703e4ee48934_1209174.jpg"
+            image: assetUrl("/images/70127abf-d5b0-4856-a439-703e4ee48934_1209174.jpg")
           },
           items: [
             { name: "Royal Mutton Dum Biryani (Hyderabadi)", quantity: 1, price: 389 }
@@ -177,4 +178,3 @@ export const useAuth = () => {
   }
   return context;
 };
-

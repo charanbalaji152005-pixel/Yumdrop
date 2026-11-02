@@ -54,6 +54,7 @@ import FoodCard from '../components/FoodCard';
 import RestaurantCard from '../components/RestaurantCard';
 import OfferCard from '../components/OfferCard';
 import SearchBar from '../components/SearchBar';
+import { assetUrl } from '../utils/assetUrl';
 
 const STAGES = [
   { stage: 1, title: "Order Placed", desc: "Sent to kitchen", icon: Clock },
@@ -376,7 +377,7 @@ export default function Home() {
                   }}
                 >
                   <img
-                    src="/images/70127abf-d5b0-4856-a439-703e4ee48934_1209174.jpg"
+                    src={assetUrl("/images/70127abf-d5b0-4856-a439-703e4ee48934_1209174.jpg")}
                     alt="Royal Dum Biryani"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />

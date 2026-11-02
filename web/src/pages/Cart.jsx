@@ -17,6 +17,7 @@ import {
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { offersData } from '../data/offers';
+import { assetUrl } from '../utils/assetUrl';
 
 export default function Cart() {
   const navigate = useNavigate();
@@ -55,7 +56,7 @@ export default function Cart() {
       <div style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px 20px', backgroundColor: '#FFFFFF' }}>
         <div style={{ textAlign: 'center', maxWidth: '420px' }}>
           <img
-            src="/images/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png"
+            src={assetUrl("/images/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png")}
             alt="Empty Cart"
             style={{ width: '140px', margin: '0 auto 20px' }}
           />
@@ -417,4 +418,3 @@ export default function Cart() {
     </div>
   );
 }
-

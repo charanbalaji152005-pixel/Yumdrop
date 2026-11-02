@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ShoppingBag, Plus, Minus, Tag, Check, ArrowRight, Sparkles, AlertCircle } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
+import { assetUrl } from '../utils/assetUrl';
 
 export default function CartDrawer() {
   const navigate = useNavigate();
@@ -138,7 +139,7 @@ export default function CartDrawer() {
             {cartItems.length === 0 ? (
               <div style={{ padding: '60px 20px', textAlign: 'center' }}>
                 <img
-                  src="/images/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png"
+                  src={assetUrl("/images/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png")}
                   alt="Empty Cart"
                   style={{ width: '120px', margin: '0 auto 16px', opacity: 0.8 }}
                 />
@@ -410,4 +411,3 @@ export default function CartDrawer() {
     </AnimatePresence>
   );
 }
-

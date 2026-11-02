@@ -1,15 +1,17 @@
 // Sample food items data for YumDrop
+import { assetUrl } from "../utils/assetUrl";
+
 export const foodCategories = [
-  { id: "cat-1", name: "Biryani", icon: "/images/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png", count: "48+ options" },
-  { id: "cat-2", name: "Pizza", icon: "/images/6ef07bda-b707-48ea-9b14-2594071593d1_Pizzas.png", count: "35+ options" },
-  { id: "cat-3", name: "Burgers", icon: "/images/8f508de7-e0ac-4ba8-b54d-def9db98959e_Shake.png", count: "24+ options" },
-  { id: "cat-4", name: "South Indian", icon: "/images/2b999748-b33c-4560-a422-e90f3e60a5fb_Poori1.png", count: "52+ options" },
-  { id: "cat-5", name: "Chinese", icon: "/images/897bc750-6b57-4e7d-9365-87c1ab2c6d7e_Chinese2.png", count: "30+ options" },
-  { id: "cat-6", name: "Desserts", icon: "/images/6ef07bda-b707-48ea-9b14-2594071593d1_Gulab jamun.png", count: "40+ options" },
-  { id: "cat-7", name: "Ice Cream", icon: "/images/8f508de7-e0ac-4ba8-b54d-def9db98959e_chocolate icecream.png", count: "26+ options" },
-  { id: "cat-8", name: "Healthy Food", icon: "/images/8f508de7-e0ac-4ba8-b54d-def9db98959e_Salad-1.png", count: "20+ options" },
-  { id: "cat-9", name: "Rolls", icon: "/images/6ef07bda-b707-48ea-9b14-2594071593d1_Kebabs.png", count: "18+ options" },
-  { id: "cat-10", name: "Beverages", icon: "/images/3f2c40d3-96c7-44ce-8b35-aef6ea746cdc_lassi.png", count: "32+ options" },
+  { id: "cat-1", name: "Biryani", icon: assetUrl("/images/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png"), count: "48+ options" },
+  { id: "cat-2", name: "Pizza", icon: assetUrl("/images/6ef07bda-b707-48ea-9b14-2594071593d1_Pizzas.png"), count: "35+ options" },
+  { id: "cat-3", name: "Burgers", icon: assetUrl("/images/8f508de7-e0ac-4ba8-b54d-def9db98959e_Shake.png"), count: "24+ options" },
+  { id: "cat-4", name: "South Indian", icon: assetUrl("/images/2b999748-b33c-4560-a422-e90f3e60a5fb_Poori1.png"), count: "52+ options" },
+  { id: "cat-5", name: "Chinese", icon: assetUrl("/images/897bc750-6b57-4e7d-9365-87c1ab2c6d7e_Chinese2.png"), count: "30+ options" },
+  { id: "cat-6", name: "Desserts", icon: assetUrl("/images/6ef07bda-b707-48ea-9b14-2594071593d1_Gulab jamun.png"), count: "40+ options" },
+  { id: "cat-7", name: "Ice Cream", icon: assetUrl("/images/8f508de7-e0ac-4ba8-b54d-def9db98959e_chocolate icecream.png"), count: "26+ options" },
+  { id: "cat-8", name: "Healthy Food", icon: assetUrl("/images/8f508de7-e0ac-4ba8-b54d-def9db98959e_Salad-1.png"), count: "20+ options" },
+  { id: "cat-9", name: "Rolls", icon: assetUrl("/images/6ef07bda-b707-48ea-9b14-2594071593d1_Kebabs.png"), count: "18+ options" },
+  { id: "cat-10", name: "Beverages", icon: assetUrl("/images/3f2c40d3-96c7-44ce-8b35-aef6ea746cdc_lassi.png"), count: "32+ options" },
 ];
 
 export const foodItemsData = [
@@ -27,7 +29,7 @@ export const foodItemsData = [
     isVeg: false,
     inStock: true,
     isBestseller: true,
-    image: "/images/70127abf-d5b0-4856-a439-703e4ee48934_1209174.jpg",
+    image: assetUrl("/images/70127abf-d5b0-4856-a439-703e4ee48934_1209174.jpg"),
     description: "Slow sealed brass pot dum biryani layered with fragrant basmati, tender grass-fed mutton, saffron milk, and fried onions.",
     tags: ["Chef Special", "Spicy"]
   },
@@ -44,7 +46,7 @@ export const foodItemsData = [
     isVeg: false,
     inStock: true,
     isBestseller: true,
-    image: "/images/8839f555-96d2-4a00-9136-05e908da9e49_1209167.jpg",
+    image: assetUrl("/images/8839f555-96d2-4a00-9136-05e908da9e49_1209167.jpg"),
     description: "Tender boneless chicken morsels marinated overnight in brown onion paste, yogurt, and aromatic spices cooked with basmati rice.",
     tags: ["Bestseller"]
   },
@@ -61,7 +63,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: false, // OUT OF STOCK to demonstrate dynamic cursor & notify me
     isBestseller: false,
-    image: "/images/49ae89fa-5a3c-4177-828b-bc0469cfb6b3_1211364.jpg",
+    image: assetUrl("/images/49ae89fa-5a3c-4177-828b-bc0469cfb6b3_1211364.jpg"),
     description: "Char-grilled fresh cottage cheese cubes cooked with whole spices, caramelized mint, and golden basmati grains.",
     tags: ["Pure Veg", "Out of Order"]
   },
@@ -80,7 +82,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: true,
     isBestseller: true,
-    image: "/images/38916ccd-7514-4103-8ca1-9ce0ca6d5edf_1404287.jpg",
+    image: assetUrl("/images/38916ccd-7514-4103-8ca1-9ce0ca6d5edf_1404287.jpg"),
     description: "Creamy fresh burrata ball, truffle infused extra virgin olive oil, San Marzano tomato sauce, and wild fresh basil on sour-dough crust.",
     tags: ["Gourmet", "Artisanal"]
   },
@@ -97,7 +99,7 @@ export const foodItemsData = [
     isVeg: false,
     inStock: true,
     isBestseller: true,
-    image: "/images/e91aa88a-7eb6-475e-b370-8ebeee7a482e_1404285.jpg",
+    image: assetUrl("/images/e91aa88a-7eb6-475e-b370-8ebeee7a482e_1404285.jpg"),
     description: "Crispy-cupped smoked pork pepperoni, pickled spicy jalapenos, aged mozzarella, and hot honey drizzle.",
     tags: ["Bestseller", "Spicy"]
   },
@@ -114,7 +116,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: false, // OUT OF STOCK to test cursor
     isBestseller: false,
-    image: "/images/3b0f677b-9852-4177-b7c0-852d459e3024_1271089.jpg",
+    image: assetUrl("/images/3b0f677b-9852-4177-b7c0-852d459e3024_1271089.jpg"),
     description: "A decadent blend of Gorgonzola, aged Fontina, smoked provolone, and melted Fior di Latte mozzarella.",
     tags: ["Special Cheese", "Out of Order"]
   },
@@ -133,7 +135,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: true,
     isBestseller: true,
-    image: "/images/75075043-da7c-4d11-a512-967f841b6e0e_1404286.jpg",
+    image: assetUrl("/images/75075043-da7c-4d11-a512-967f841b6e0e_1404286.jpg"),
     description: "Wok-tossed hand-pulled noodles tossed with roasted garlic, red fiery Schezwan peppers, baby corn, and scallions.",
     tags: ["Spicy", "Chef Pick"]
   },
@@ -150,7 +152,7 @@ export const foodItemsData = [
     isVeg: false,
     inStock: true,
     isBestseller: false,
-    image: "/images/4e63defe-0be2-428d-b17c-ba3b37c5aa32_1149291.JPG",
+    image: assetUrl("/images/4e63defe-0be2-428d-b17c-ba3b37c5aa32_1149291.JPG"),
     description: "Crispy wok-glazed tender chicken strips and thinly sliced crunchy lotus stems glazed with organic honey and sesame.",
     tags: ["Crunchy", "Sweet & Spicy"]
   },
@@ -167,7 +169,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: false, // OUT OF STOCK
     isBestseller: true,
-    image: "/images/43ff4441-cdce-44fe-9e8f-fc2b335fa172_995182.jpg",
+    image: assetUrl("/images/43ff4441-cdce-44fe-9e8f-fc2b335fa172_995182.jpg"),
     description: "Translucent handcrafted dumplings filled with Japanese edamame, truffle oil, water chestnuts, served with chilli dip.",
     tags: ["Exotic", "Sold Out"]
   },
@@ -186,7 +188,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: true,
     isBestseller: true,
-    image: "/images/0d0484a5-84e2-4c8c-8b17-c6d66bd4b8fa_1211230.jpg",
+    image: assetUrl("/images/0d0484a5-84e2-4c8c-8b17-c6d66bd4b8fa_1211230.jpg"),
     description: "Crisp outside, fluffy inside Davangere style butter dosa roasted in pure country ghee and coated with spiced gun powder.",
     tags: ["Legendary", "Pure Ghee"]
   },
@@ -203,7 +205,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: true,
     isBestseller: false,
-    image: "/images/2b999748-b33c-4560-a422-e90f3e60a5fb_Poori1.png",
+    image: assetUrl("/images/2b999748-b33c-4560-a422-e90f3e60a5fb_Poori1.png"),
     description: "Platter-sized fluffy steamed rice cake topped with hot sambar, creamy coconut chutney, and crispy medu vada.",
     tags: ["Breakfast Hit"]
   },
@@ -222,7 +224,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: true,
     isBestseller: true,
-    image: "/images/136496c1-0fff-4059-915e-76347477ad36_1350140.jpg",
+    image: assetUrl("/images/136496c1-0fff-4059-915e-76347477ad36_1350140.jpg"),
     description: "Black lentils slow-cooked overnight for 24 hours on clay tandoor charcoal, finished with white butter and fresh cream.",
     tags: ["Iconic", "24-hr Cooked"]
   },
@@ -239,7 +241,7 @@ export const foodItemsData = [
     isVeg: false,
     inStock: true,
     isBestseller: true,
-    image: "/images/05a939eb-fd4e-4308-b989-d1c54f4421b3_northindian1.png",
+    image: assetUrl("/images/05a939eb-fd4e-4308-b989-d1c54f4421b3_northindian1.png"),
     description: "Tandoori grilled chicken steeped in velvety sun-ripened tomato gravy rich with cashew butter and dried fenugreek leaves.",
     tags: ["Must Try"]
   },
@@ -256,7 +258,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: false, // OUT OF STOCK
     isBestseller: false,
-    image: "/images/6ef07bda-b707-48ea-9b14-2594071593d1_Paratha.png",
+    image: assetUrl("/images/6ef07bda-b707-48ea-9b14-2594071593d1_Paratha.png"),
     description: "Crispy layered tandoor bread stuffed with spicy spiced paneer and potatoes, served with tangy chole and pickled onions.",
     tags: ["Crispy", "Sold Out"]
   },
@@ -275,7 +277,7 @@ export const foodItemsData = [
     isVeg: false,
     inStock: true,
     isBestseller: true,
-    image: "/images/e81ede5f-bda2-40e9-a118-d5619d5498c7_1337686.jpg",
+    image: assetUrl("/images/e81ede5f-bda2-40e9-a118-d5619d5498c7_1337686.jpg"),
     description: "Two 100% crispy-edged smashed patties, double melted aged cheddar, caramelized onions, house pickles on toasted brioche.",
     tags: ["Juicy", "Brioche"]
   },
@@ -292,7 +294,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: true,
     isBestseller: false,
-    image: "/images/bad5d960-769c-49bc-a7f0-1ceeb9a4878c_1011013.jpg",
+    image: assetUrl("/images/bad5d960-769c-49bc-a7f0-1ceeb9a4878c_1011013.jpg"),
     description: "Golden panko-crusted cottage cheese steak dusted with African peri-peri spices, garlic aioli, and crunchy iceberg lettuce.",
     tags: ["Crunchy Veg"]
   },
@@ -309,7 +311,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: false, // OUT OF STOCK
     isBestseller: false,
-    image: "/images/54c462ea-e529-41e4-a3fa-a2f75ecd4861_1353992.jpg",
+    image: assetUrl("/images/54c462ea-e529-41e4-a3fa-a2f75ecd4861_1353992.jpg"),
     description: "Golden crinkle fries tossed in black truffle oil, freshly grated Grana Padano parmesan cheese, and rosemary salt.",
     tags: ["Gourmet Sides", "Sold Out"]
   },
@@ -328,7 +330,7 @@ export const foodItemsData = [
     isVeg: false,
     inStock: true,
     isBestseller: true,
-    image: "/images/1f7f1374-aece-4b9c-927c-1dbbd98cd1b7_1350166.jpg",
+    image: assetUrl("/images/1f7f1374-aece-4b9c-927c-1dbbd98cd1b7_1350166.jpg"),
     description: "Herb-marinated chicken breast, warm tri-color organic quinoa, avocado slices, roasted cherry tomatoes, and tahini lemon dressing.",
     tags: ["High Protein 42g", "Keto Friendly"]
   },
@@ -345,7 +347,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: true,
     isBestseller: false,
-    image: "/images/8f508de7-e0ac-4ba8-b54d-def9db98959e_Salad-1.png",
+    image: assetUrl("/images/8f508de7-e0ac-4ba8-b54d-def9db98959e_Salad-1.png"),
     description: "Crisp romaine, Kalamata black olives, English cucumber, creamy sheep milk feta, and herb vinaigrette.",
     tags: ["Low Carb", "Fresh"]
   },
@@ -364,7 +366,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: true,
     isBestseller: true,
-    image: "/images/f88bbe31-53a9-459d-8477-1c622f89cb3b_1316369.jpg",
+    image: assetUrl("/images/f88bbe31-53a9-459d-8477-1c622f89cb3b_1316369.jpg"),
     description: "Warm gooey centre cake made with 70% Callebaut Belgian dark chocolate, served with vanilla bean cream.",
     tags: ["Best Chocolate", "Decadent"]
   },
@@ -381,7 +383,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: true,
     isBestseller: false,
-    image: "/images/6ef07bda-b707-48ea-9b14-2594071593d1_Gulab jamun.png",
+    image: assetUrl("/images/6ef07bda-b707-48ea-9b14-2594071593d1_Gulab jamun.png"),
     description: "Soft saffron infused warm mawa dumplings soaked in cardamom rose syrup, topped with roasted pistachios.",
     tags: ["Traditional"]
   },
@@ -398,7 +400,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: false, // OUT OF STOCK
     isBestseller: true,
-    image: "/images/8f508de7-e0ac-4ba8-b54d-def9db98959e_chocolate icecream.png",
+    image: assetUrl("/images/8f508de7-e0ac-4ba8-b54d-def9db98959e_chocolate icecream.png"),
     description: "Dense chocolate gelato swirled with gooey walnut brownie chunks and ribbons of warm hot fudge.",
     tags: ["Fan Favorite", "Sold Out"]
   },
@@ -417,7 +419,7 @@ export const foodItemsData = [
     isVeg: true,
     inStock: true,
     isBestseller: true,
-    image: "/images/3f2c40d3-96c7-44ce-8b35-aef6ea746cdc_lassi.png",
+    image: assetUrl("/images/3f2c40d3-96c7-44ce-8b35-aef6ea746cdc_lassi.png"),
     description: "Thick hand-churned sweet curd blended with Kashmiri saffron threads, slivered California almonds, and rich clotted cream.",
     tags: ["Chilled", "Refreshing"]
   },
@@ -434,9 +436,8 @@ export const foodItemsData = [
     isVeg: true,
     inStock: true,
     isBestseller: false,
-    image: "/images/8f508de7-e0ac-4ba8-b54d-def9db98959e_Shake.png",
+    image: assetUrl("/images/8f508de7-e0ac-4ba8-b54d-def9db98959e_Shake.png"),
     description: "Thick creamy shake loaded with real Nutella spread, roasted hazelnuts, whipped cream, and chocolate cookie crumble.",
     tags: ["Thick", "Sweet"]
   }
 ];
-

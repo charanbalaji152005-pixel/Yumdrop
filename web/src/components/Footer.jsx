@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, ArrowRight, ShieldCheck, Heart, Sparkles, Phone, MapPin } from 'lucide-react';
 import { useCart } from '../context/CartContext';
+import { assetUrl } from '../utils/assetUrl';
 
 export default function Footer() {
   const { showToast } = useCart();
@@ -148,16 +149,16 @@ export default function Footer() {
             {/* Social Icons */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <a href="#facebook" style={{ opacity: 0.85, transition: 'opacity 0.2s' }}>
-                <img src="/images/icon-facebook.png" alt="Facebook" style={{ width: '28px', height: '28px' }} />
+                <img src={assetUrl("/images/icon-facebook.png")} alt="Facebook" style={{ width: '28px', height: '28px' }} />
               </a>
               <a href="#instagram" style={{ opacity: 0.85, transition: 'opacity 0.2s' }}>
-                <img src="/images/icon-instagram.png" alt="Instagram" style={{ width: '28px', height: '28px' }} />
+                <img src={assetUrl("/images/icon-instagram.png")} alt="Instagram" style={{ width: '28px', height: '28px' }} />
               </a>
               <a href="#twitter" style={{ opacity: 0.85, transition: 'opacity 0.2s' }}>
-                <img src="/images/icon-twitter.png" alt="Twitter" style={{ width: '28px', height: '28px' }} />
+                <img src={assetUrl("/images/icon-twitter.png")} alt="Twitter" style={{ width: '28px', height: '28px' }} />
               </a>
               <a href="#linkedin" style={{ opacity: 0.85, transition: 'opacity 0.2s' }}>
-                <img src="/images/icon-linkedin.png" alt="LinkedIn" style={{ width: '28px', height: '28px' }} />
+                <img src={assetUrl("/images/icon-linkedin.png")} alt="LinkedIn" style={{ width: '28px', height: '28px' }} />
               </a>
             </div>
           </div>
@@ -251,12 +252,12 @@ export default function Footer() {
             {/* App Store / Play Store Badges */}
             <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
               <img
-                src="/images/app_store.png"
+                src={assetUrl("/images/app_store.png")}
                 alt="App Store"
                 style={{ height: '36px', borderRadius: '6px', cursor: 'pointer' }}
               />
               <img
-                src="/images/play_store.png"
+                src={assetUrl("/images/play_store.png")}
                 alt="Google Play"
                 style={{ height: '36px', borderRadius: '6px', cursor: 'pointer' }}
               />
@@ -296,4 +297,3 @@ export default function Footer() {
     </footer>
   );
 }
-

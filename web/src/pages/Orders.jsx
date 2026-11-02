@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
+import { assetUrl } from '../utils/assetUrl';
 
 const STAGES = [
   { stage: 1, title: "Order Placed", desc: "Sent to kitchen", icon: Clock },
@@ -76,7 +77,7 @@ export default function Orders() {
         price: item.price,
         inStock: true,
         isVeg: item.isVeg !== undefined ? item.isVeg : true,
-        image: item.image || order.restaurant?.image || '/images/70127abf-d5b0-4856-a439-703e4ee48934_1209174.jpg',
+        image: item.image || order.restaurant?.image || assetUrl('/images/70127abf-d5b0-4856-a439-703e4ee48934_1209174.jpg'),
         restaurantName: order.restaurant?.name || 'YumDrop Partner'
       });
     });
@@ -89,7 +90,7 @@ export default function Orders() {
       <div style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px 20px', backgroundColor: '#FFFFFF' }}>
         <div style={{ textAlign: 'center', maxWidth: '440px' }}>
           <img
-            src="/images/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png"
+            src={assetUrl("/images/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png")}
             alt="No Orders"
             style={{ width: '130px', margin: '0 auto 20px' }}
           />
@@ -453,4 +454,3 @@ export default function Orders() {
     </div>
   );
 }
-
