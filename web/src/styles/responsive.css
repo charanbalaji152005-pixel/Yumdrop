@@ -1,0 +1,90 @@
+/* Responsive Layouts & Breakpoints for YumDrop */
+
+/* Desktop & Large Screens (>1024px) */
+@media (min-width: 1025px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+/* Tablet & Smaller Laptops (<= 1024px) */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .hide-on-tablet {
+    display: none !important;
+  }
+}
+
+/* Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: block !important;
+  }
+
+  .container, .container-wide {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section-header {
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: 1.35rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.85rem;
+  }
+
+  /* Buttons on mobile */
+  .btn-primary, .btn-secondary, .btn-gold, .btn-danger {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Cart drawer full width on mobile */
+  .cart-drawer-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Grid adjustments */
+  .grid-restaurants {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .grid-foods {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
+    gap: 16px !important;
+  }
+
+  .grid-categories {
+    gap: 12px !important;
+  }
+
+  /* Touch device cursor disabling */
+  .custom-cursor-container {
+    display: none !important;
+  }
+}
+
+/* Small mobile (<= 480px) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .grid-foods {
+    grid-template-columns: 1fr !important;
+  }
+}
+

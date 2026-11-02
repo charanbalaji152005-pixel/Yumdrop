@@ -1,0 +1,131 @@
+/* YumDrop Keyframe Animations & Microinteractions */
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-3deg);
+  }
+}
+
+@keyframes pulseGlowGreen {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(8, 124, 69, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(8, 124, 69, 0);
+  }
+}
+
+@keyframes pulseGlowRed {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(240, 68, 56, 0.55);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(240, 68, 56, 0);
+  }
+}
+
+@keyframes cursorRippleAvailable {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.9;
+    box-shadow: 0 0 0 0 rgba(8, 124, 69, 0.7);
+  }
+  70% {
+    transform: scale(1.4);
+    opacity: 0.2;
+    box-shadow: 0 0 0 16px rgba(8, 124, 69, 0);
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes cursorRippleSoldOut {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.9;
+    box-shadow: 0 0 0 0 rgba(240, 68, 56, 0.75);
+  }
+  70% {
+    transform: scale(1.4);
+    opacity: 0.2;
+    box-shadow: 0 0 0 16px rgba(240, 68, 56, 0);
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes goldCardShine {
+  0% {
+    background-position: -200% -200%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+@keyframes shimmerSkeleton {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes badgeBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatReverse 7s ease-in-out 1s infinite;
+}
+
+.animate-pulse-green {
+  animation: pulseGlowGreen 2s infinite;
+}
+
+.animate-pulse-red {
+  animation: pulseGlowRed 2s infinite;
+}
+
+.skeleton-loading {
+  background: linear-gradient(90deg, #f0f3f1 25%, #e1ebe5 50%, #f0f3f1 75%);
+  background-size: 200% 100%;
+  animation: shimmerSkeleton 1.5s infinite;
+}
+
+.card-tilt-hover {
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease;
+  will-change: transform;
+}
+
+.card-tilt-hover:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: var(--shadow-hover);
+}
+
